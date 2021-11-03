@@ -1,0 +1,24 @@
+{
+  "name": "swift_dynamic_test_user_api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.24.0",
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "lodash.groupby": "^4.6.0",
+    "lodash.map": "^4.6.0",
+    "moment": "^2.29.1",
+    "nodemailer": "^6.7.0",
+    "nodemon": "^2.0.14"
+  }
+}
