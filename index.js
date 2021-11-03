@@ -123,6 +123,13 @@ app.post('/api/v1/jobs',(req,res)=>{
       //next()
     });
     const job = req.body;
+    const errors = [];
+    if((!job.name) || job.name == ""){
+        errors.push("name is required");
+    }
+    if(errors.length>0){
+        return res.status(400).send(errors);
+    }
     job.id = jobs.length+1;
     job.status= status.pending;
     job.createdBy = req.user.username;
